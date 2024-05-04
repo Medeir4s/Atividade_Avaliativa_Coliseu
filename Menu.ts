@@ -1,3 +1,5 @@
+export * from './jogo'
+
 class menu{
     itensMenu:itensMenu[];
 }

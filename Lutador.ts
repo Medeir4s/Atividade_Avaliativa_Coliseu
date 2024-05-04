@@ -1,18 +1,22 @@
+export{} from './Coliseu'
+
 import{Equipamentos, itensCabeca, itensCorpo, itensMao} from './Lutador';
 import{}from'./Lutador'
 
+export{} from './Jogo'
+
 class Lutador{
-    healthPoints:number;
+    hpPlayer:number;
     mp:number;
     ataque:number;
     defesa:number;
     //Separamento de atributos
     itensCabeca:Equipamento.this.itensDeEquipamento;
-    itensCorpa:Equipamento.this.itensDeEquipamento ;
+    itensCorpo:Equipamento.this.itensDeEquipamento ;
     itensMao:Equipamento.this.itensDeEquipamento;
     //construtor
-    constructor(healthPoints, mp, ataque, defesa){
-        this.healthPoints=number;
+    constructor(hpPlayer, mp, ataque, defesa){
+        this.hpPlayer=number;
         this.mp=Number;
         this.ataque=Number;
         this.defesa=Number;
@@ -38,14 +42,43 @@ exibirInfoLutador();{
 exibirAtaque(ataque);{
     return this.ataque
 }
-//Não entendi essa alternativa da questão 3.ii
 
-ataqueEspecial(){
+ataqueEspecial();{
     const ataqueEspecial1 = this.ataque*0.5;
-    this.mp -=20;
-    return ataqueEspecial1;
+        this.mp -=20;
+            return ataqueEspecial1;
 
     if (this.mp <= 20) {
         console.log('MP Insuficiente');
+         return 0
+    }
+}
+
+receberDano();{
+   if (this.hpPlayer -=(ataqueSofridor - defesa)){
+   }
+
+   if (this.defesa > exibirAtaque){  
+    return this.hpPlayer += (ataqueSofridor - defesa)
+   }
+}
+
+Atacar(this.itensCabeca,this.itensCorpo, this.itensMao);{
+    itensCabeca+itensCorpo+itensMao;}
+
+
+Defender(this.itensCabeca,this.itensCorpo, this.itensMao);{
+    itensCabeca+itensCorpo+itensMao;
+}
+
+tomarPocaoHP();{
+    if(this.hpPlayer * 0.25){
+        console.log(`HP em: ${this.hpPlayer}`)
+    }
+}
+
+tomarPocaoMP();{
+    if(this.mp * 0.25){
+        console.log(`MP em: ${this.hpPlayer}`)
     }
 }

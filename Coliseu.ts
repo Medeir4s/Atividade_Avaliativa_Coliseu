@@ -12,12 +12,12 @@ class Monstro{
     constructor(){
         this.healthPoints=number
         this.forcaDeAtaque=number
-        this;this.forcaDeDefesa=number
+        this.forcaDeDefesa=number
     }
 }
 
 function hp(healthPoints,forcaDeAtaque,forcaDeDefesa){
-    if (hp <= hp/0.5){
+    if (hp <= hp/0.25){
         console.log('Dano recebido pela Metade!')
     }
     if (forcaDeAtaque*0.1){
